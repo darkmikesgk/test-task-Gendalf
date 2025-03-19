@@ -1,0 +1,15 @@
+.pracrice-request__title {
+  color: #fff;
+  font-weight: 300;
+  font-size: 28px;
+  line-height: 137%;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+@media (min-width: 1025px) {
+  .pracrice-request__title {
+    font-weight: 700;
+    font-size: 36px;
+  }
+}

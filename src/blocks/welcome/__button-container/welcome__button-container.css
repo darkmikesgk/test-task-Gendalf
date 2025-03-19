@@ -1,0 +1,9 @@
+@import url("./-item/welcome__button-container-item.css");
+
+.welcome__button-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: clamp(0.625rem, -0.7476rem + 5.8564vw, 3.9375rem);
+}

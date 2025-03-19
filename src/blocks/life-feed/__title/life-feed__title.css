@@ -1,0 +1,12 @@
+.life-feed__title {
+  color: #00b7ec;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 137%;
+}
+
+@media (min-width: 1025px) {
+  .life-feed__title {
+    font-size: 36px;
+  }
+}

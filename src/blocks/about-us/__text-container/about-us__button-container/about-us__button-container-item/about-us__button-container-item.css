@@ -1,0 +1,41 @@
+.about-us__button-container-item {
+  width: 295px;
+  height: 50px;
+  border: none;
+  border-radius: 5px;
+  color: #00b7ec;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 0;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+.about-us__button-container-item:first-child {
+  color: #ffffff;
+  background-color: #00b7ec;
+}
+
+.about-us__button-container-item:first-child:hover {
+  background-color: #1998d5;
+}
+
+.about-us__button-container-item:last-child {
+  outline: 1px solid;
+  color: #00b7ec;
+}
+
+.about-us__button-container-item:last-child:hover {
+  color: #1998d5;
+}
+
+@media (min-width: 1025px) {
+  .about-us__button-container-item:first-child {
+    width: 225px;
+  }
+
+  .about-us__button-container-item:last-child {
+    width: 320px;
+  }
+}

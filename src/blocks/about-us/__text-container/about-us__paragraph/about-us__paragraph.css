@@ -1,0 +1,9 @@
+@import url('./-item/about-us__paragraph-item.css');
+
+.about-us__paragraph {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: #666666;
+  line-height: 137%;
+}

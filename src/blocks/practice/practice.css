@@ -1,0 +1,17 @@
+@import url("./-request/pracrice-request.css");
+
+.practice {
+  padding: 9.07% 0 7.737%;
+  background-color: #002f3d80;
+  background-image: url("../../images/Practice-bg.png");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  background-blend-mode: multiply;
+}
+
+@media (min-width: 1025px) {
+  .practice {
+    padding: 6.7% 0 11%;
+  }
+}

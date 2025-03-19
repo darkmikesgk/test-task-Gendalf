@@ -1,0 +1,17 @@
+.our-values__title {
+  padding-inline: 10px 11px;
+  color: #00b7ec;
+  font-weight: 400;
+  font-size: 31px;
+  line-height: 127%;
+  text-align: center;
+}
+
+@media (min-width: 1025px) {
+  .our-values__title {
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 137%;
+    text-align: start;
+  }
+}

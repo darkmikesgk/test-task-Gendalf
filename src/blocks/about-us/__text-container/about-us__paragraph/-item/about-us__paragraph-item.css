@@ -1,0 +1,13 @@
+.about-us__paragraph-item {
+font-weight: 400;
+font-size: 16px;
+letter-spacing: 0%;
+}
+
+@media (min-width: 1025px) {
+  .about-us__paragraph-item {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 137%; 
+  }
+}

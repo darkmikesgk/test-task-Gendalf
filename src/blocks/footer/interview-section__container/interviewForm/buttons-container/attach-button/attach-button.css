@@ -1,0 +1,32 @@
+@import url("./clip/clip.css");
+
+.attach-button {
+  display: flex;
+  justify-content: center;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  max-width: 296px;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  outline: 2px solid #9bcc37;
+  color: #9bcc37;
+  font-weight: 700;
+  font-size: 20px;
+  background-color: #fff;
+}
+
+.attach-button:hover {
+  color: #77ba04;
+  cursor: pointer;
+}
+
+@media (min-width: 1025px) {
+  .attach-button {
+    gap: 2%;
+    max-width: 270px;
+    padding: 12px 0 11px;
+  }
+}

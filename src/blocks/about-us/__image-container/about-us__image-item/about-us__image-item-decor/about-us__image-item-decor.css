@@ -1,0 +1,27 @@
+@media (min-width: 1025px) {
+  .about-us__image-item-decor {
+    position: absolute;
+  }
+
+  .overlay1 {
+    top: 3%;
+    left: 26%;
+    width: 68px;
+    height: 68px;
+  }
+
+  .overlay2 {
+    top: 55%;
+    left: 6%;
+    width: 147px;
+    height: 148px;
+    transform: translate(-50%, -50%);
+  }
+
+  .overlay3 {
+    right: -1%;
+    bottom: 18%;
+    width: 117px;
+    height: 120px;
+  }
+}

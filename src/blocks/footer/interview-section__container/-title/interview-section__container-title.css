@@ -1,0 +1,19 @@
+.interview-section__container-title {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 8px;
+  color: rgba(255, 255, 255, 1);
+  font-weight: 300;
+  font-size: 28px;
+  line-height: 137%;
+  text-align: center;
+  text-align: center;
+}
+
+@media (min-width: 1025px) {
+  .interview-section__container-title {
+    font-size: 36px;
+  }
+}

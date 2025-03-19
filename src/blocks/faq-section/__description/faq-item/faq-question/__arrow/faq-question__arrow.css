@@ -1,0 +1,4 @@
+.faq-question__arrow {
+  align-self: flex-start;
+  transition: transform 0.3s;
+}

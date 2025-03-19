@@ -1,0 +1,42 @@
+.arrow {
+  position: absolute;
+  top: 51%;
+  z-index: 10;
+  border: none;
+  padding: 0;
+  background: none;
+  transform: translateY(-50%);
+}
+
+.left-arrow {
+  left: 10px;
+}
+
+.right-arrow {
+  right: 10px;
+}
+
+.arrow svg {
+  width: 22px;
+  height: 36px;
+  fill: #666;
+  transition: fill 0.3s ease;
+}
+
+.arrow:disabled {
+  cursor: auto;
+}
+
+@media (min-width: 1025px) {
+  .arrow {
+    top: 50%;
+  }
+
+  .left-arrow {
+    left: 3px;
+  }
+
+  .right-arrow {
+    right: 2px;
+  }
+}

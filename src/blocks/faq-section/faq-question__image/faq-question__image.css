@@ -1,0 +1,13 @@
+.faq-question__image {
+  position: absolute;
+  top: 37px;
+  right: 30px;
+  width: 29.532%;
+  height: 320px;
+}
+
+@media (max-width: 1024px) {
+  .faq-question__image {
+    display: none;
+  }
+}

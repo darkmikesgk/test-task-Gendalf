@@ -1,0 +1,21 @@
+@import url("./__logo-desktop/header__logo-desktop.css");
+@import url("./__link-container/header__link-container.css");
+@import url("./__button-desktop/header__button-desktop.css");
+@import url("./__link-mobile/header__link-mobile.css");
+@import url("./__button-mobile/header__button-mobile.css");
+
+.header {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 9px 11px;
+}
+
+@media (min-width: 1025px) {
+  .header {
+    justify-content: normal;
+    padding: 7px 10px 7px 6px;
+    background-color: #00b7ec;
+  }
+}

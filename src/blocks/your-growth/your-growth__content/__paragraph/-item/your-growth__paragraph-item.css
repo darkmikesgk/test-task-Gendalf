@@ -1,0 +1,13 @@
+.your-growth__paragraph-item {
+  color: #666666;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 137%;
+  letter-spacing: 0%;
+}
+
+@media (min-width: 1025px) {
+  .your-growth__paragraph-item {
+    font-size: 18px;
+  }
+}

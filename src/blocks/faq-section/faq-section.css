@@ -1,0 +1,23 @@
+@import url("./__description/faq-section__description.css");
+@import url("./faq-question__image/faq-question__image.css");
+
+.faq-section {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 21px 10px 0px 21px;
+  background: linear-gradient(
+    320deg,
+    rgb(5 176 213 / 50%) 11.27%,
+    rgb(39 221 209 / 50%) 36.94%,
+    rgb(70 205 22 / 20%) 59.63%,
+    rgb(40 228 115 / 20%) 82.7%
+  );
+}
+
+@media (min-width: 1025px) {
+  .faq-section {
+    justify-content: space-between;
+    padding: 5% 2% 3.7% 1%;
+  }
+}

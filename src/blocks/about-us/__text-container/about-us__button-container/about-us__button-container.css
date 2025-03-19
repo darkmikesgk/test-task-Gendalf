@@ -1,0 +1,16 @@
+@import url("./about-us__button-container-item/about-us__button-container-item.css");
+
+.about-us__button-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: clamp(0.625rem, -0.7476rem + 5.8564vw, 3.9375rem);
+}
+
+@media (min-width: 1025px) {
+  .about-us__button-container {
+    justify-content: flex-start;
+    gap: 21px;
+  }
+}

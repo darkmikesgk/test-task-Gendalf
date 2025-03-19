@@ -1,0 +1,19 @@
+@import url("./__arrow/faq-question__arrow.css");
+@import url("./__question/faq-question__question.css");
+
+.faq-question {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  color: #666666;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 137%;
+  text-decoration: underline;
+  text-decoration-style: solid;
+  cursor: pointer;
+}
+
+.faq-question:hover {
+  color: #00b7ec;
+}

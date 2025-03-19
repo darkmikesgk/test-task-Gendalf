@@ -1,0 +1,35 @@
+@import url("./-number/card-number.css");
+@import url("./card-title/card-title.css");
+@import url("./-description/card-description.css");
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  box-sizing: border-box;
+  margin-inline-end: 60px;
+  color: #666666;
+  inline-size: clamp(13.75rem, 10.9012rem + 12.1547vw, 20.625rem);
+}
+
+.card img {
+  height: 150px;
+  padding-inline-start: 15px;
+  object-fit: cover;
+  object-position: center;
+}
+
+@media (min-width: 1025px) {
+  .card {
+    gap: 12px;
+    margin-inline-end: 35px;
+  }
+
+  .card img {
+    width: 100%;
+    height: 200px;
+    padding-inline-start: 50px;
+  }
+}

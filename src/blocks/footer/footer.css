@@ -1,0 +1,32 @@
+@import url("./interview-section__container/interview-section__container.css");
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 24px 10px 12px 11px;
+  background-color: #002f3d80;
+  background-image: url("../../images/Footer-bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: multiply;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+@media (min-width: 1025px) {
+  .footer {
+    padding: 4.8% 0 4.766% 1%;
+  }
+}

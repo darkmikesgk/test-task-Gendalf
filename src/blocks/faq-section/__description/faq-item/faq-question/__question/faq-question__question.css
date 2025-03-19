@@ -1,0 +1,9 @@
+.faq-question__question {
+  padding-left: 5px;
+}
+
+@media (min-width: 1025px) {
+  .faq-question__question {
+    padding-left: 15px;
+  }
+}

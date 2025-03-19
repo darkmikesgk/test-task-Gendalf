@@ -1,0 +1,20 @@
+@import url("./__text-container/about-us__text-container.css");
+@import url("./__image-container/about-us__image-container.css");
+
+.about-us {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 30px;
+  padding: 45px 10px 30px 10px;
+}
+
+@media (min-width: 1025px) {
+  .about-us {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-block-end: 13px;
+  }
+}

@@ -1,0 +1,13 @@
+@import url('../vendor/normalize.css');
+@import url('../vendor/fonts.css');
+@import url('../blocks/page/page.css');
+@import url('../blocks/header/header.css');
+@import url('../blocks/content/content.css');
+@import url('../blocks/welcome/welcome.css');
+@import url('../blocks/about-us/about-us.css');
+@import url('../blocks/our-values/our-values.css');
+@import url('../blocks/your-growth/your-growth.css');
+@import url('../blocks/life-feed/life-feed.css');
+@import url('../blocks/practice/practice.css');
+@import url('../blocks/faq-section/faq-section.css');
+@import url('../blocks/footer/footer.css');

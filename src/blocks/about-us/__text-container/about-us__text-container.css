@@ -1,0 +1,17 @@
+@import url("./about-us__title/about-us__title.css");
+@import url("./about-us__paragraph/about-us__paragraph.css");
+@import url("./about-us__button-container/about-us__button-container.css");
+
+.about-us__text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+@media (min-width: 1025px) {
+  .about-us__text-container {
+    align-items: flex-start;
+    gap: 25px;
+    width: 57%;
+  }
+}

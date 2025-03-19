@@ -1,0 +1,13 @@
+@import url("./-item/your-growth__paragraph-item.css");
+
+.your-growth__paragraph {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+@media (min-width: 1025px) {
+  .your-growth__paragraph {
+    width: 494px;
+  }
+}

@@ -1,0 +1,10 @@
+@import url("./about-us__image-item-decor/about-us__image-item-decor.css");
+
+@media (min-width: 1025px) {
+  .about-us__image-item {
+    width: 292px;
+    height: 292px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+}

@@ -1,0 +1,13 @@
+.valid {
+  background-image: url("../../../../../../images/valid.png");
+  background-repeat: no-repeat;
+  background-position: 96%;
+  background-size: auto;
+}
+
+.invalid {
+  background-image: url("../../../../../../images/invalid.png");
+  background-repeat: no-repeat;
+  background-position: 96%;
+  background-size: auto;
+}

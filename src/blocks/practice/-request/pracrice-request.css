@@ -1,0 +1,15 @@
+@import url("./__title/pracrice-request__title.css");
+@import url("./__button/pracrice-request__button.css");
+
+.pracrice-request {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 21px;
+}
+
+@media (min-width: 1025px) {
+  .pracrice-request {
+    gap: 42px;
+  }
+}

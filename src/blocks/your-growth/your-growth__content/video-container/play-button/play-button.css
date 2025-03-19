@@ -1,0 +1,23 @@
+@import url("./play-video/play-video.css");
+
+.play-button {
+  position: absolute;
+  top: 52%;
+  left: 54%;
+  width: 90px;
+  height: 90px;
+  border: none;
+  padding-inline: 0;
+  padding-block: 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+@media (min-width: 1025px) {
+  .play-button {
+    left: 51%;
+  }
+}

@@ -1,0 +1,20 @@
+@import url("./custom-checkbox/custom-checkbox.css");
+
+.radio-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 21px;
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 100%;
+}
+
+@media (min-width: 1025px) {
+  .radio-group {
+    gap: 14px;
+    font-weight: 700;
+    font-size: 18px;
+  }
+}

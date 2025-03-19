@@ -1,0 +1,16 @@
+@import url("./video-preview/video-preview.css");
+@import url("./play-button/play-button.css");
+@import url("./video/video.css");
+
+.video-container {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+}
+
+@media (min-width: 1025px) {
+  .video-container {
+    width: 48%;
+    height: 98%;
+  }
+}

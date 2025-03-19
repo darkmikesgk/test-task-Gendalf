@@ -1,0 +1,23 @@
+.submit-button {
+  width: 100%;
+  max-width: 296px;
+  border: none;
+  border-radius: 5px;
+  padding: 13px 0;
+  color: #fff;
+  font-weight: 700;
+  font-size: 20px;
+  text-align: center;
+  background-color: #9bcc37;
+}
+
+.submit-button:hover {
+  background-color: #77ba04;
+  cursor: pointer;
+}
+
+@media (min-width: 1025px) {
+  .submit-button {
+    max-width: 218px;
+  }
+}

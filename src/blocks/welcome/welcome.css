@@ -1,0 +1,24 @@
+@import url("./__text-container/welcome__text-container.css");
+@import url("./__button-container/welcome__button-container.css");
+
+.welcome {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 31px 15px 35px 12px;
+  color: #fff;
+  background-color: #002f3db2;
+  background-image: url("../../images/Background_welcome.png");
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: multiply;
+  block-size: 24.25rem;
+}
+
+@media (min-width: 1025px) {
+  .welcome {
+    padding: 5% 0 9% 0;
+    block-size: 568px;
+  }
+}

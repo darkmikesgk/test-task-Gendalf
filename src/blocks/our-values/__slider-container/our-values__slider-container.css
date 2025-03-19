@@ -1,0 +1,8 @@
+@import url("./slider/slider.css");
+
+.our-values__slider-container {
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+  user-select: none;
+}

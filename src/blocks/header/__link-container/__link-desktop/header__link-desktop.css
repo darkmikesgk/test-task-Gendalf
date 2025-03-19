@@ -1,0 +1,13 @@
+@media (min-width: 1025px) {
+  .header__link-desktop {
+    color: #fff;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 0%;
+  }
+
+  .header__link-desktop:hover {
+    text-decoration: underline;
+  }
+}

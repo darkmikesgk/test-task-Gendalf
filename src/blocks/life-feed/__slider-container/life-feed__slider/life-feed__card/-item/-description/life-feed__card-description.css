@@ -1,0 +1,9 @@
+.life-feed__card-description {
+  display: block;
+  padding-inline: 20px;
+  color: #666666;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 137%;
+  letter-spacing: 0%;
+}

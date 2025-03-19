@@ -1,0 +1,9 @@
+@import url("./arrow/arrow.css");
+@import url("./life-feed__slider/life-feed__slider.css");
+
+.life-feed__slider-container {
+  position: relative;
+  width: 100%;
+  height: 414px;
+  overflow: hidden;
+}

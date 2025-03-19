@@ -1,0 +1,13 @@
+@import url("./-item/faq-answer-item.css");
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+@media (min-width: 1025px) {
+  .faq-answer {
+    width: 820px;
+  }
+}

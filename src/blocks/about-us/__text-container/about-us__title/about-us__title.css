@@ -1,0 +1,17 @@
+.about-us__title {
+  color: #00b7ec;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 137%;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+@media (min-width: 1025px) {
+  .about-us__title {
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 137%;
+    text-align: start;
+  }
+}

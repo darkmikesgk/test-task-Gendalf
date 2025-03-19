@@ -1,0 +1,15 @@
+@import url("./faq-question/faq-question.css");
+@import url("./faq-answer/faq-answer.css");
+
+.faq-item {
+  display: flex;
+  flex-direction: column;
+  gap: 27px;
+}
+
+@media (min-width: 1025px) {
+  .faq-item {
+    gap: 6px;
+    margin-block-end: 17px;
+  }
+}

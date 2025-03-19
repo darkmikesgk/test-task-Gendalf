@@ -1,0 +1,8 @@
+@import url("./-image/life-feed__card-item-image.css");
+@import url("./-description/life-feed__card-description.css");
+
+.life-feed__card-item {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}

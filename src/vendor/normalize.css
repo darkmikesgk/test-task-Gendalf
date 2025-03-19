@@ -1,0 +1,56 @@
+/* Сброс стандартных стилей */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы и лишние элементы */
+html, body {
+  /* line-height: 1.6; */
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* Убираем подчеркивание у ссылок */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Убираем стандартные стили для списков */
+ul, ol {
+  list-style-type: none;
+}
+
+/* Убираем стандартные стили для заголовков */
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+/* Убираем стандартные стили для изображений */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Убираем стандартные стили для кнопок */
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+/* Убираем стандартные стили для таблиц */
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+/* Убираем стандартные стили для форм */
+input, textarea, select {
+  border: 1px solid #ccc;
+  padding: 10px;
+  font-size: 16px;
+}

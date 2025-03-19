@@ -1,0 +1,39 @@
+@import url("./__title/your-growth__title.css");
+@import url("./your-growth__content/your-growth__content.css");
+/* @import url("./__paragraph/your-growth__paragraph.css");
+@import url('./video-container/video-container.css'); */
+
+.your-growth {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 35px 10px 23px;
+  overflow: hidden;
+}
+
+.your-growth::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  opacity: 0.4;
+  background: linear-gradient(
+    163.35deg,
+    rgba(40, 228, 115, 0.496) 11.27%,
+    rgba(70, 205, 22, 0.296) 36.19%,
+    rgba(39, 221, 209, 0.8) 53.68%,
+    rgba(5, 176, 213, 0.8) 82.7%
+  );
+}
+
+@media (min-width: 1025px) {
+  .your-growth {
+    justify-content: center;
+    gap: 39px;
+    padding: 5% 8.829% 3.125% 3.282%;
+  }
+}

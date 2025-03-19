@@ -1,0 +1,18 @@
+@import url("./about-us__image-item/about-us__image-item.css");
+
+@media (min-width: 1025px) {
+  .about-us__image-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 392px;
+    height: 460px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .about-us__image-container {
+    display: none;
+  }
+}

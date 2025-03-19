@@ -1,0 +1,23 @@
+.pracrice-request__button {
+  border: none;
+  border-radius: 5px;
+  padding: 13px 70px 12px;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: clamp(1rem, 0.2727rem + 3.6364vw, 1.125rem);
+  line-height: 137%;
+  letter-spacing: 0%;
+  text-align: center;
+  background-color: #9bcc37;
+}
+
+.pracrice-request__button:hover {
+  background-color: #77ba04;
+}
+
+@media (min-width: 1025px) {
+  .pracrice-request__button {
+    padding: 15px 70px 15px;
+    line-height: 100%;
+  }
+}

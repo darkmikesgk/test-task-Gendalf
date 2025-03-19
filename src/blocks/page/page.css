@@ -1,0 +1,6 @@
+.page {
+  background-color: #fff;
+  min-inline-size: 20rem;
+  max-inline-size: 1280px;
+  margin: 0 auto;
+}
