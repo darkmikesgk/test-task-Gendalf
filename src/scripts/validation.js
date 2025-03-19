@@ -7,7 +7,8 @@ export function validateInput(input) {
       isValid = /^[a-zA-Zа-яА-ЯёЁ]{2,}$/.test(value);
       break;
     case "phone":
-      isValid = /^\d+$/.test(value);
+      isValid = /^\+?\d{7,}$/.test(value);
+      break;
     case "email":
       isValid = validateEmail(value);
       break;
