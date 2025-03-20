@@ -1,7 +1,7 @@
 .pracrice-request__button {
   border: none;
   border-radius: 5px;
-  padding: 13px 70px 12px;
+  padding: 13px 73px 12px;
   color: #ffffff;
   font-weight: 700;
   font-size: clamp(1rem, 0.2727rem + 3.6364vw, 1.125rem);
@@ -17,7 +17,8 @@
 
 @media (min-width: 1025px) {
   .pracrice-request__button {
-    padding: 15px 70px 15px;
+    margin-inline-start: 5px;
+    padding: 15px 69px;
     line-height: 100%;
   }
 }

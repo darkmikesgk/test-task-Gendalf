@@ -1,0 +1,17 @@
+.life-feed__card-link {
+  width: fit-content;
+  margin-inline-start: 14px;
+  margin-block-end: 23px;
+  border: 1px solid;
+  border-radius: 5px;
+  padding: 8px 40px 8px 22px;
+  color: #00b7ec;
+  text-decoration: none;
+}
+
+@media (min-width: 1025px) {
+  .life-feed__card-link {
+    margin-inline-start: 25px;
+    padding: 9px 43px 9px;
+  }
+}

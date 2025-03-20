@@ -1,0 +1,18 @@
+@import url("./__paragraph/your-growth__paragraph.css");
+@import url("./video-container/video-container.css");
+
+.your-growth__content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 21px;
+  width: 100%;
+}
+
+@media (min-width: 1025px) {
+  .your-growth__content {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    gap: 110px;
+    width: 100%;
+  }
+}

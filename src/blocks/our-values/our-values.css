@@ -1,5 +1,4 @@
-@import url("./__title/our-values__title.css");
-@import url("./__slider-container/our-values__slider-container.css");
+@import url("./__wrapper/our-values__wrapper.css");
 
 .our-values {
   display: flex;
@@ -12,6 +11,7 @@
 
 @media (min-width: 1025px) {
   .our-values {
+    align-items: center;
     gap: 39px;
     padding: 2.735% 0 5.313%;
   }

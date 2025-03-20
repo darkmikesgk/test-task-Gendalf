@@ -1,6 +1,9 @@
 @import url("./-request/pracrice-request.css");
 
 .practice {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 9.07% 0 7.737%;
   background-color: #002f3d80;
   background-image: url("../../images/Practice-bg.png");
@@ -12,6 +15,6 @@
 
 @media (min-width: 1025px) {
   .practice {
-    padding: 6.7% 0 11%;
+    padding: 86px 0 141px;
   }
 }

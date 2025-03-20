@@ -1,0 +1,20 @@
+@media (min-width: 1025px) {
+  .header__button-desktop {
+    border: none;
+    border-radius: 5px;
+    padding: 8px 0 8px 0;
+    outline: 1px solid #00b7ec;
+    color: #00b7ec;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 137%;
+    background-color: #fff;
+    inline-size: 255px;
+  }
+
+  .header__button-desktop:hover {
+    outline-color: #1998d5;
+    color: #1998d5;
+    cursor: pointer;
+  }
+}

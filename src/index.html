@@ -11,17 +11,19 @@
   </head>
   <body class="page">
     <header class="header">
-      <a class="header__logo-desktop" href="#">
-        <img src="<%=require('./images/Logo-desk.png')%>" alt="Логотип" />
-      </a>
-      <div class="header__link-container">
-        <a class="header__link-desktop" href="#">Профориентация</a>
-        <a class="header__link-desktop" href="#">Выбрать вакансию</a>
-        <a class="header__link-desktop" href="#">Карьера в ГЭНДАЛЬФ</a>
-        <a class="header__link-desktop" href="#">Стажерство</a>
-        <a class="header__link-desktop" href="#">Отзывы</a>
+      <div class="header__wrapper-desctop">
+        <a class="header__logo-desktop" href="#">
+          <img src="<%=require('./images/Logo-desk.png')%>" alt="Логотип" />
+        </a>
+        <div class="header__link-container">
+          <a class="header__link-desktop" href="#">Профориентация</a>
+          <a class="header__link-desktop" href="#">Выбрать вакансию</a>
+          <a class="header__link-desktop" href="#">Карьера в ГЭНДАЛЬФ</a>
+          <a class="header__link-desktop" href="#">Стажерство</a>
+          <a class="header__link-desktop" href="#">Отзывы</a>
+        </div>
+        <button class="header__button-desktop">Запись на собеседование</button>
       </div>
-      <button class="header__button-desktop">Запись на собеседование</button>
       <a class="header__link-mobile" href="#">
         <img
           src="<%=require('./svg/Search.svg')%>"
@@ -132,197 +134,204 @@
       </section>
 
       <section class="our-values">
-        <h2 class="our-values__title">Наши ценности скажут о нас больше:</h2>
-        <div class="our-values__slider-container">
-          <div class="slider" id="slider">
-            <article class="card">
-              <img
-                src="<%=require('./images/First-card.png')%>"
-                alt="Карточка 1"
-              />
-              <div class="card-number">1</div>
-              <h3 class="card-title">Быть командой</h3>
-              <span class="card-description">
-                Готовность вносить вклад в общие цели команды и достигать их.
-              </span>
-            </article>
-            <article class="card">
-              <img
-                src="<%=require('./images/Second-card.png')%>"
-                alt="Карточка 2"
-              />
-              <div class="card-number even">2</div>
-              <h3 class="card-title">Побеждать и не сдаваться</h3>
-              <span class="card-description">
-                Быть ориентированным на результат, настойчивым и не сдаваться
-                перед трудностями.
-              </span>
-            </article>
-            <article class="card">
-              <img
-                src="<%=require('./images/Third-card.png')%>"
-                alt="Карточка 3"
-              />
-              <div class="card-number">3</div>
-              <h3 class="card-title">Заботиться о клиентах</h3>
-              <span class="card-description">
-                Выполнять обещания и интересоваться потребностями своих клиентов
-              </span>
-            </article>
-            <article class="card">
-              <img
-                src="<%=require('./images/Fourth-card.png')%>"
-                alt="Карточка 4"
-              />
-              <div class="card-number even">4</div>
-              <h3 class="card-title">Быть увлеченным<br />и ответственным</h3>
-              <span class="card-description">
-                Вкладывать душу в то, что делаешь<br />и получать от работы
-                удовольствие.
-              </span>
-            </article>
-            <div class="card">
-              <img
-                src="<%=require('./images/Fifth-card.png')%>"
-                alt="Карточка 5"
-              />
-              <div class="card-number">5</div>
-              <h3 class="card-title">Развиваться</h3>
-              <span class="card-description">
-                Постоянно расти личностно и профессионально для достижения
-                поставленных целей.
-              </span>
+        <div class="our-values__wrapper">
+          <h2 class="our-values__title">Наши ценности скажут о нас больше:</h2>
+          <div class="our-values__slider-container">
+            <div class="slider" id="slider">
+              <article class="card">
+                <img
+                  src="<%=require('./images/First-card.png')%>"
+                  alt="Карточка 1"
+                />
+                <div class="card-number first-card">1</div>
+                <h3 class="card-title">Быть командой</h3>
+                <span class="card-description">
+                  Готовность вносить вклад в общие цели команды и достигать их.
+                </span>
+              </article>
+              <article class="card">
+                <img
+                  src="<%=require('./images/Second-card.png')%>"
+                  alt="Карточка 2"
+                />
+                <div class="card-number even">2</div>
+                <h3 class="card-title">Побеждать и не сдаваться</h3>
+                <span class="card-description">
+                  Быть ориентированным на результат, настойчивым и не сдаваться
+                  перед трудностями.
+                </span>
+              </article>
+              <article class="card">
+                <img
+                  src="<%=require('./images/Third-card.png')%>"
+                  alt="Карточка 3"
+                />
+                <div class="card-number">3</div>
+                <h3 class="card-title">Заботиться о клиентах</h3>
+                <span class="card-description">
+                  Выполнять обещания и интересоваться потребностями своих
+                  клиентов
+                </span>
+              </article>
+              <article class="card">
+                <img
+                  src="<%=require('./images/Fourth-card.png')%>"
+                  alt="Карточка 4"
+                />
+                <div class="card-number even">4</div>
+                <h3 class="card-title">Быть увлеченным<br />и ответственным</h3>
+                <span class="card-description">
+                  Вкладывать душу в то, что делаешь<br />и получать от работы
+                  удовольствие.
+                </span>
+              </article>
+              <div class="card">
+                <img
+                  src="<%=require('./images/Fifth-card.png')%>"
+                  alt="Карточка 5"
+                />
+                <div class="card-number">5</div>
+                <h3 class="card-title">Развиваться</h3>
+                <span class="card-description">
+                  Постоянно расти личностно и профессионально для достижения
+                  поставленных целей.
+                </span>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
       <section class="your-growth">
-        <h2 class="your-growth__title">
-          Инфраструктура для твоего развития и роста
-        </h2>
-        <div class="your-growth__content">
-          <div class="your-growth__paragraph">
-            <p class="your-growth__paragraph-item">
-              Мы создаем платформу для профессионального развития каждого
-              сотрудника. Главная цель – дать возможность учиться, работать и
-              получать удовольствие от каждой успешной задачи.
-            </p>
-            <p class="your-growth__paragraph-item">
-              О возможностях личностного роста в ГЭНДАЛЬФ расскажет руководитель
-              Департамента персонала и карьеры Татьяна Арсенович.
-            </p>
-          </div>
-          <div class="video-container">
-            <img
-              src="<%=require('./images/Video-preview.png')%>"
-              alt="Video Preview"
-              class="video-preview"
-            />
-            <button class="play-button">
+        <div class="your-growth__wrapper">
+          <h2 class="your-growth__title">
+            Инфраструктура для твоего развития и роста
+          </h2>
+          <div class="your-growth__content">
+            <div class="your-growth__paragraph">
+              <p class="your-growth__paragraph-item">
+                Мы создаем платформу для профессионального развития каждого
+                сотрудника. Главная цель – дать возможность учиться, работать и
+                получать удовольствие от каждой успешной задачи.
+              </p>
+              <p class="your-growth__paragraph-item">
+                О возможностях личностного роста в ГЭНДАЛЬФ расскажет
+                руководитель Департамента персонала и карьеры Татьяна Арсенович.
+              </p>
+            </div>
+            <div class="video-container">
               <img
-                src="<%=require('./images/Play-button.png')%>"
-                alt="Play video"
-                class="play-video"
+                src="<%=require('./images/Video-preview.png')%>"
+                alt="Video Preview"
+                class="video-preview"
               />
-            </button>
-            <iframe
-              class="video"
-              id="video"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            ></iframe>
+              <button class="play-button">
+                <img
+                  src="<%=require('./images/Play-button.png')%>"
+                  alt="Play video"
+                  class="play-video"
+                />
+              </button>
+              <iframe
+                class="video"
+                id="video"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              ></iframe>
+            </div>
           </div>
         </div>
       </section>
 
       <section class="life-feed">
-        <h2 class="life-feed__title">Живая лента</h2>
-        <div class="life-feed__slider-container">
-          <button class="arrow left-arrow">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 22 36"
-              width="22"
-              height="36"
-            >
-              <path
-                fill="currentColor"
-                d="M19.345 35.588 0 18 19.345.412a1.638 1.638 0 0 1 1.1-.412c.398 0 .796.137 1.1.412.607.549.607 1.44 0 1.989L4.294 18l17.25 15.6c.607.548.607 1.439 0 1.988-.608.55-1.592.55-2.2 0Z"
-              />
-            </svg>
-          </button>
-          <div class="life-feed__slider">
-            <article class="life-feed__card">
-              <div class="life-feed__card-item">
-                <img
-                  class="life-feed__card-item-image"
-                  src="<%=require('./images/Life-feed-1.png')%>"
-                  alt="Экономим на бумаге"
+        <div class="life-feed__wrapper">
+          <h2 class="life-feed__title">Живая лента</h2>
+          <div class="life-feed__slider-container">
+            <button class="arrow left-arrow">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 22 36"
+                width="22"
+                height="36"
+              >
+                <path
+                  fill="currentColor"
+                  d="M19.345 35.588 0 18 19.345.412a1.638 1.638 0 0 1 1.1-.412c.398 0 .796.137 1.1.412.607.549.607 1.44 0 1.989L4.294 18l17.25 15.6c.607.548.607 1.439 0 1.988-.608.55-1.592.55-2.2 0Z"
                 />
-                <span class="life-feed__card-description"
-                  >Экономим на бумаге и угадываем фильмы: дайджест видео марта
-                  2022 года</span
-                >
-              </div>
-              <a class="life-feed__card-link" href="#">Перейти к статье</a>
-            </article>
-            <article class="life-feed__card">
-              <div class="life-feed__card-item">
-                <img
-                  class="life-feed__card-item-image"
-                  src="<%=require('./images/Life-feed-2.png')%>"
-                  alt="Изменения 2022 года"
+              </svg>
+            </button>
+            <div class="life-feed__slider">
+              <article class="life-feed__card">
+                <div class="life-feed__card-item">
+                  <img
+                    class="life-feed__card-item-image"
+                    src="<%=require('./images/Life-feed-1.png')%>"
+                    alt="Экономим на бумаге"
+                  />
+                  <span class="life-feed__card-description"
+                    >Экономим на бумаге и угадываем фильмы: дайджест видео марта
+                    2022 года</span
+                  >
+                </div>
+                <a class="life-feed__card-link" href="#">Перейти к статье</a>
+              </article>
+              <article class="life-feed__card">
+                <div class="life-feed__card-item">
+                  <img
+                    class="life-feed__card-item-image"
+                    src="<%=require('./images/Life-feed-2.png')%>"
+                    alt="Изменения 2022 года"
+                  />
+                  <span class="life-feed__card-description"
+                    >Изменения 2022 года</span
+                  >
+                </div>
+                <a class="life-feed__card-link" href="#">Перейти к статье</a>
+              </article>
+              <article class="life-feed__card">
+                <div class="life-feed__card-item">
+                  <img
+                    class="life-feed__card-item-image"
+                    src="<%=require('./images/Life-feed-3.png')%>"
+                    alt="Плюсы программистов в 2022"
+                  />
+                  <span class="life-feed__card-description"
+                    >Почему стоит работать программистом в 2022 году</span
+                  >
+                </div>
+                <a class="life-feed__card-link" href="#">Перейти к статье</a>
+              </article>
+              <article class="life-feed__card">
+                <div class="life-feed__card-item">
+                  <img
+                    class="life-feed__card-item-image"
+                    src="<%=require('./images/Life-feed-4.png')%>"
+                    alt="Дайджеси новостей за март 2022"
+                  />
+                  <span class="life-feed__card-description"
+                    >Автоматизированный УСН и путевые листы: дайджест новостей
+                    за март 2022. Автоматизированный УСН и путевые листы</span
+                  >
+                </div>
+                <a class="life-feed__card-link" href="#">Перейти к статье</a>
+              </article>
+            </div>
+            <button class="arrow right-arrow">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 22 36"
+                width="22"
+                height="36"
+              >
+                <path
+                  fill="currentColor"
+                  d="M2.655.412 22 18 2.655 35.588a1.638 1.638 0 0 1-1.1.412c-.398 0-.796-.137-1.1-.412a1.313 1.313 0 0 1 0-1.989L17.705 18 .455 2.4a1.313 1.313 0 0 1 0-1.988 1.674 1.674 0 0 1 2.2 0Z"
                 />
-                <span class="life-feed__card-description"
-                  >Изменения 2022 года</span
-                >
-              </div>
-              <a class="life-feed__card-link" href="#">Перейти к статье</a>
-            </article>
-            <article class="life-feed__card">
-              <div class="life-feed__card-item">
-                <img
-                  class="life-feed__card-item-image"
-                  src="<%=require('./images/Life-feed-3.png')%>"
-                  alt="Плюсы программистов в 2022"
-                />
-                <span class="life-feed__card-description"
-                  >Почему стоит работать программистом в 2022 году</span
-                >
-              </div>
-              <a class="life-feed__card-link" href="#">Перейти к статье</a>
-            </article>
-            <article class="life-feed__card">
-              <div class="life-feed__card-item">
-                <img
-                  class="life-feed__card-item-image"
-                  src="<%=require('./images/Life-feed-4.png')%>"
-                  alt="Дайджеси новостей за март 2022"
-                />
-                <span class="life-feed__card-description"
-                  >Автоматизированный УСН и путевые листы: дайджест новостей за
-                  март 2022. Автоматизированный УСН и путевые листы</span
-                >
-              </div>
-              <a class="life-feed__card-link" href="#">Перейти к статье</a>
-            </article>
+              </svg>
+            </button>
           </div>
-          <button class="arrow right-arrow">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 22 36"
-              width="22"
-              height="36"
-            >
-              <path
-                fill="currentColor"
-                d="M2.655.412 22 18 2.655 35.588a1.638 1.638 0 0 1-1.1.412c-.398 0-.796-.137-1.1-.412a1.313 1.313 0 0 1 0-1.989L17.705 18 .455 2.4a1.313 1.313 0 0 1 0-1.988 1.674 1.674 0 0 1 2.2 0Z"
-              />
-            </svg>
-          </button>
         </div>
       </section>
 
@@ -337,98 +346,103 @@
       </section>
 
       <section class="faq-section">
-        <div class="faq-section__description">
-          <h2 class="faq-section__title">Ответы на вопросы</h2>
-          <div class="faq-item">
-            <div class="faq-question">
-              <img
-                src="<%=require('./images/Faq-arrow.png')%>"
-                alt="Arrow"
-                class="faq-question__arrow"
-              />
-              <h3 class="faq-question__question">
-                На что нужно обратить внимание на собеседовании?
-              </h3>
+        <div class="faq-section__wrapper">
+          <div class="faq-section__description">
+            <h2 class="faq-section__title">Ответы на вопросы</h2>
+            <div class="faq-item">
+              <div class="faq-question">
+                <img
+                  src="<%=require('./images/Faq-arrow.png')%>"
+                  alt="Arrow"
+                  class="faq-question__arrow"
+                />
+                <h3 class="faq-question__question">
+                  На что нужно обратить внимание на собеседовании?
+                </h3>
+              </div>
+              <div class="faq-answer">
+                <p class="faq-answer-item">
+                  Кроме умения представлять себя, грамотно разговаривать и
+                  опрятного внешнего вида, стоит обратить внимание еще на пару
+                  моментов. Они не очевидны, но очень эффективны.
+                </p>
+                <p class="faq-answer-item">
+                  <strong>Сохраняйте спокойствие.</strong> Конечно,
+                  собеседование – это стрессовая ситуация, которая мешает
+                  конструктивно мыслить. Если волнение берет верх – выпейте
+                  немного воды, прижмите стопы к полу, а главное, помните:
+                  ничего ужасного произойти не может.
+                </p>
+                <p class="faq-answer-item">
+                  <strong>Внимание к самопрезентации.</strong> Если
+                  собеседование – пьеса, вы – ее главный герой. Подготовьте
+                  рассказ о себе заранее, опираясь на важные навыки, и опишите,
+                  почему это важно для данной работы. Все это придаст вам
+                  уверенности в себе.
+                </p>
+                <p class="faq-answer-item">
+                  <strong>Каверзные вопросы – это норма.</strong> Если вам
+                  задали какой-либо вопрос, который кажется вам сложным или
+                  задевает личные качества, знайте – правильных ответов не
+                  существует. Каверзные вопросы призваны показать вашу
+                  стрессоустойчивость и умение ориентироваться в ситуации. Здесь
+                  поможет адекватная самокритика и знания в своей профессии.
+                </p>
+              </div>
             </div>
-            <div class="faq-answer">
-              <p class="faq-answer-item">
-                Кроме умения представлять себя, грамотно разговаривать и
-                опрятного внешнего вида, стоит обратить внимание еще на пару
-                моментов. Они не очевидны, но очень эффективны.
-              </p>
-              <p class="faq-answer-item">
-                <strong>Сохраняйте спокойствие.</strong> Конечно, собеседование
-                – это стрессовая ситуация, которая мешает конструктивно мыслить.
-                Если волнение берет верх – выпейте немного воды, прижмите стопы
-                к полу, а главное, помните: ничего ужасного произойти не может.
-              </p>
-              <p class="faq-answer-item">
-                <strong>Внимание к самопрезентации.</strong> Если собеседование
-                – пьеса, вы – ее главный герой. Подготовьте рассказ о себе
-                заранее, опираясь на важные навыки, и опишите, почему это важно
-                для данной работы. Все это придаст вам уверенности в себе.
-              </p>
-              <p class="faq-answer-item">
-                <strong>Каверзные вопросы – это норма.</strong> Если вам задали
-                какой-либо вопрос, который кажется вам сложным или задевает
-                личные качества, знайте – правильных ответов не существует.
-                Каверзные вопросы призваны показать вашу стрессоустойчивость и
-                умение ориентироваться в ситуации. Здесь поможет адекватная
-                самокритика и знания в своей профессии.
-              </p>
+            <div class="faq-item">
+              <div class="faq-question">
+                <img
+                  src="<%=require('./images/Faq-arrow.png')%>"
+                  alt="Arrow"
+                  class="faq-question__arrow"
+                />
+                <h3 class="faq-question__question">
+                  Есть ли какие-то возрастные ограничения при приеме на работу?
+                </h3>
+              </div>
+              <div class="faq-answer">
+                <p class="faq-answer-item">Ответ на вопрос</p>
+              </div>
+            </div>
+            <div class="faq-item">
+              <div class="faq-question">
+                <img
+                  src="<%=require('./images/Faq-arrow.png')%>"
+                  alt="Arrow"
+                  class="faq-question__arrow"
+                />
+                <h3 class="faq-question__question">
+                  Объяснят ли сотрудники почему отказано в приеме на работу?
+                </h3>
+              </div>
+              <div class="faq-answer">
+                <p class="faq-answer-item">Ответ на вопрос</p>
+              </div>
+            </div>
+            <div class="faq-item">
+              <div class="faq-question">
+                <img
+                  src="<%=require('./images/Faq-arrow.png')%>"
+                  alt="Arrow"
+                  class="faq-question__arrow"
+                />
+                <h3 class="faq-question__question">
+                  Сколько собеседований предстоит пройти перед приемом на
+                  работу?
+                </h3>
+              </div>
+              <div class="faq-answer">
+                <p class="faq-answer-item">Ответ на вопрос</p>
+              </div>
             </div>
           </div>
-          <div class="faq-item">
-            <div class="faq-question">
-              <img
-                src="<%=require('./images/Faq-arrow.png')%>"
-                alt="Arrow"
-                class="faq-question__arrow"
-              />
-              <h3 class="faq-question__question">
-                Есть ли какие-то возрастные ограничения при приеме на работу?
-              </h3>
-            </div>
-            <div class="faq-answer">
-              <p class="faq-answer-item">Ответ на вопрос</p>
-            </div>
-          </div>
-          <div class="faq-item">
-            <div class="faq-question">
-              <img
-                src="<%=require('./images/Faq-arrow.png')%>"
-                alt="Arrow"
-                class="faq-question__arrow"
-              />
-              <h3 class="faq-question__question">
-                Объяснят ли сотрудники почему отказано в приеме на работу?
-              </h3>
-            </div>
-            <div class="faq-answer">
-              <p class="faq-answer-item">Ответ на вопрос</p>
-            </div>
-          </div>
-          <div class="faq-item">
-            <div class="faq-question">
-              <img
-                src="<%=require('./images/Faq-arrow.png')%>"
-                alt="Arrow"
-                class="faq-question__arrow"
-              />
-              <h3 class="faq-question__question">
-                Сколько собеседований предстоит пройти перед приемом на работу?
-              </h3>
-            </div>
-            <div class="faq-answer">
-              <p class="faq-answer-item">Ответ на вопрос</p>
-            </div>
-          </div>
+          <img
+            src="<%=require('./images/Faq-section-image.png')%>"
+            alt="Декоративная картинка"
+            class="faq-question__image"
+          />
         </div>
-        <img
-          src="<%=require('./images/Faq-section-image.png')%>"
-          alt="Декоративная картинка"
-          class="faq-question__image"
-        />
       </section>
     </main>
 

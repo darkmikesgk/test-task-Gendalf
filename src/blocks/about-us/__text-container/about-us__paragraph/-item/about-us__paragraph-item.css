@@ -1,13 +1,21 @@
 .about-us__paragraph-item {
-font-weight: 400;
-font-size: 16px;
-letter-spacing: 0%;
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 0%;
+}
+
+.about-us__paragraph-item:last-child {
+  margin-block-end: 20px;
 }
 
 @media (min-width: 1025px) {
   .about-us__paragraph-item {
     font-weight: 400;
     font-size: 18px;
-    line-height: 137%; 
+    line-height: 137%;
+  }
+
+  .about-us__paragraph-item:last-child {
+    margin-block-end: 0;
   }
 }

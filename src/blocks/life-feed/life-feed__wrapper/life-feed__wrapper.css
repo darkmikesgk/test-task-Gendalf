@@ -1,0 +1,17 @@
+@import url("./__title/life-feed__title.css");
+@import url("./__slider-container/life-feed__slider-container.css");
+
+.life-feed__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  max-width: 1280px;
+}
+
+@media (min-width: 1025px) {
+  .life-feed__wrapper {
+    align-items: flex-start;
+  }
+}

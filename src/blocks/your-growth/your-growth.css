@@ -1,14 +1,11 @@
-@import url("./__title/your-growth__title.css");
-@import url("./your-growth__content/your-growth__content.css");
-/* @import url("./__paragraph/your-growth__paragraph.css");
-@import url('./video-container/video-container.css'); */
+@import url("./__wrapper/your-growth__wrapper.css");
 
 .your-growth {
   position: relative;
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
-  padding: 35px 10px 23px;
+  padding: 35px 10px 20px;
   overflow: hidden;
 }
 
@@ -33,7 +30,6 @@
 @media (min-width: 1025px) {
   .your-growth {
     justify-content: center;
-    gap: 39px;
     padding: 5% 8.829% 3.125% 3.282%;
   }
 }

@@ -1,0 +1,16 @@
+@import url("./__logo-desktop/header__logo-desktop.css");
+@import url("./__link-container/header__link-container.css");
+@import url("./__button-desktop/header__button-desktop.css");
+
+.header__wrapper-desctop {
+  display: none;
+}
+
+@media (min-width: 1025px) {
+  .header__wrapper-desctop {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 1280px;
+  }
+}

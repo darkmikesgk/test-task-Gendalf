@@ -18,15 +18,15 @@
   position: absolute;
   width: 1px;
   height: 1px;
-  padding: 0;
   margin: -1px;
+  border: 0;
+  padding: 0;
   overflow: hidden;
   clip: rect(0, 0, 0, 0);
-  border: 0;
 }
 
 @media (min-width: 1025px) {
   .footer {
-    padding: 4.8% 0 4.766% 1%;
+    padding: 61px 0 61px 12px;
   }
 }

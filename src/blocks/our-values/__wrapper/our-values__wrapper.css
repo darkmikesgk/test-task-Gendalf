@@ -1,0 +1,21 @@
+@import url("./__title/our-values__title.css");
+@import url("./__slider-container/our-values__slider-container.css");
+
+.our-values__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 46px;
+  overflow: hidden;
+}
+
+@media (min-width: 1025px) {
+  .our-values__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 41px;
+    max-width: 1280px;
+    overflow: hidden;
+  }
+}

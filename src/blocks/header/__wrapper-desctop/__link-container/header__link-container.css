@@ -1,0 +1,12 @@
+@import url("./__link-desktop/header__link-desktop.css");
+
+@media (min-width: 1025px) {
+  .header__link-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    margin-inline-end: 54px;
+    inline-size: 67%;
+  }
+}

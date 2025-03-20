@@ -1,17 +1,15 @@
-@import url("./__title/life-feed__title.css");
-@import url("./__slider-container/life-feed__slider-container.css");
+@import url("./life-feed__wrapper/life-feed__wrapper.css");
 
 .life-feed {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 19px;
-  padding: 32px 0 38px;
+  padding: 32px 0 37px;
 }
 
 @media (min-width: 1025px) {
   .life-feed {
-    align-items: flex-start;
-    padding: 38px 8px 42px;
+    padding: 38px 8px 45px;
   }
 }

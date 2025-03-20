@@ -1,0 +1,15 @@
+.faq-section__title {
+  margin-block-end: 15px;
+  color: #14afe8;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 200%;
+  letter-spacing: 0%;
+}
+
+@media (min-width: 1025px) {
+  .faq-section__title {
+    margin-block-end: 46px;
+    line-height: 137%;
+  }
+}

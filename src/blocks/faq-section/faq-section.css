@@ -1,11 +1,9 @@
-@import url("./__description/faq-section__description.css");
-@import url("./faq-question__image/faq-question__image.css");
+@import url("./faq-section__wrapper/faq-section__wrapper.css");
 
 .faq-section {
-  position: relative;
   display: flex;
   flex-wrap: wrap;
-  padding: 21px 10px 0px 21px;
+  padding: 26px 0 19px 20px;
   background: linear-gradient(
     320deg,
     rgb(5 176 213 / 50%) 11.27%,
@@ -17,7 +15,7 @@
 
 @media (min-width: 1025px) {
   .faq-section {
-    justify-content: space-between;
-    padding: 5% 2% 3.7% 1%;
+    justify-content: center;
+    padding: 64px 0 30px 10px;
   }
 }

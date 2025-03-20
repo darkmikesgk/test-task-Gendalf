@@ -1,6 +1,4 @@
-@import url("./__logo-desktop/header__logo-desktop.css");
-@import url("./__link-container/header__link-container.css");
-@import url("./__button-desktop/header__button-desktop.css");
+@import url("./__wrapper-desctop/header__wrapper-desctop.css");
 @import url("./__link-mobile/header__link-mobile.css");
 @import url("./__button-mobile/header__button-mobile.css");
 
@@ -14,8 +12,8 @@
 
 @media (min-width: 1025px) {
   .header {
-    justify-content: normal;
-    padding: 7px 10px 7px 6px;
+    justify-content: center;
+    padding: 0.547% 0.782% 0.547% 0.469%;
     background-color: #00b7ec;
   }
 }

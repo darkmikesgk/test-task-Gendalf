@@ -1,0 +1,15 @@
+@import url("./__description/faq-section__description.css");
+@import url("./faq-question__image/faq-question__image.css");
+
+.faq-section__wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+@media (min-width: 1025px) {
+  .faq-section__wrapper {
+    max-width: 1280px;
+  }
+}
