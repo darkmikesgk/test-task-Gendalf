@@ -7,7 +7,7 @@ export function validateInput(input) {
       isValid = /^[a-zA-Zа-яА-ЯёЁ\s'-]{2,}$/.test(value);
       break;
     case "phone":
-      const cleanedPhone = value.replace(/\D/g, "");
+      const cleanedPhone = value.replace(/[^\d+]/g, "");
       isValid = /^\+?\d{11,}$/.test(cleanedPhone);
       break;
     case "email":
@@ -24,6 +24,10 @@ export function validateInput(input) {
   setValidationIcon(input, isValid);
   return isValid;
 }
+
+document.getElementById("phone").addEventListener("input", function (event) {
+  event.target.value = event.target.value.replace(/[^\d\s()+\-]/g, "");
+});
 
 export function setValidationIcon(input, isValid) {
   const icon = input.parentElement.querySelector(".validation-icon");

@@ -57,6 +57,13 @@ function initializeFAQ() {
   });
 }
 
+function truncateFileName(fileName, maxLength = 15) {
+  if (fileName.length > maxLength) {
+    return fileName.substring(0, maxLength) + "...";
+  }
+  return fileName;
+}
+
 function initFileUpload() {
   const fileInput = document.getElementById("resume");
   const fileList = document.getElementById("fileList");
@@ -65,10 +72,11 @@ function initFileUpload() {
     const files = event.target.files;
     if (files.length > 0) {
       const file = files[0];
+      const fileName = truncateFileName(file.name);
 
       const fileItem = document.createElement("div");
       fileItem.className = "file-item";
-      fileItem.textContent = file.name;
+      fileItem.textContent = fileName;
 
       const deleteButton = document.createElement("button");
       deleteButton.textContent = "Удалить";
