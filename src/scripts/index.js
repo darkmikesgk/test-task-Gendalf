@@ -1,9 +1,8 @@
 import "../pages/index.css";
 import { initSlider } from "./slider.js";
-import { validateInput } from "./validation.js";
+import { validateInput, validateForm } from "./validation.js";
 
 const playButton = document.querySelector(".play-button");
-
 const slider = document.querySelector(".slider");
 let cards = document.querySelectorAll(".card");
 
@@ -58,33 +57,76 @@ function initializeFAQ() {
   });
 }
 
-document
-  .getElementById("interviewForm")
-  .addEventListener("submit", function (event) {
-    event.preventDefault();
-    validateForm();
-  });
+function initFileUpload() {
+  const fileInput = document.getElementById("resume");
+  const fileList = document.getElementById("fileList");
 
-const inputs = document.querySelectorAll(".input-group input");
-inputs.forEach((input) => {
-  input.addEventListener("input", function () {
-    validateInput(input);
-  });
-});
+  fileInput.addEventListener("change", function (event) {
+    const files = event.target.files;
+    if (files.length > 0) {
+      const file = files[0];
 
-function validateForm() {
-  let isValid = true;
+      const fileItem = document.createElement("div");
+      fileItem.className = "file-item";
+      fileItem.textContent = file.name;
+
+      const deleteButton = document.createElement("button");
+      deleteButton.textContent = "Удалить";
+      deleteButton.addEventListener("click", function () {
+        fileList.removeChild(fileItem);
+        fileInput.value = "";
+        checkFormValidity();
+      });
+
+      fileItem.appendChild(deleteButton);
+      fileList.appendChild(fileItem);
+    }
+    checkFormValidity();
+  });
+}
+
+function checkFormValidity() {
+  const employmentSelected = document.querySelector(
+    'input[name="employment"]:checked'
+  );
+  const resumeAttached = document.getElementById("resume").files.length > 0;
+  const submitButton = document.querySelector(".submit-button");
+
+  if (employmentSelected && resumeAttached && validateForm()) {
+    submitButton.disabled = false;
+  } else {
+    submitButton.disabled = true;
+  }
+}
+
+function initializeFormValidation() {
+  const form = document.getElementById("interviewForm");
+  const inputs = document.querySelectorAll(
+    ".input-group input, .input-group textarea"
+  );
+  const radioButtons = document.querySelectorAll('input[name="employment"]');
+
   inputs.forEach((input) => {
-    if (!validateInput(input)) {
-      isValid = false;
+    input.addEventListener("input", function () {
+      validateInput(input);
+      checkFormValidity();
+    });
+  });
+
+  radioButtons.forEach((radio) => {
+    radio.addEventListener("change", checkFormValidity);
+  });
+
+  form.addEventListener("submit", function (event) {
+    event.preventDefault();
+    if (validateForm()) {
+      alert("Форма успешно отправлена!");
     }
   });
-
-  if (isValid) {
-    alert("Форма успешно отправлена!");
-  }
 }
 
 playButton.addEventListener("click", playVideo);
 initSlider();
 initializeFAQ();
+initFileUpload();
+initializeFormValidation();

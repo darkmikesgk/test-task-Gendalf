@@ -16,6 +16,16 @@
   cursor: pointer;
 }
 
+.submit-button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.submit-button:disabled:hover {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
 @media (min-width: 1025px) {
   .submit-button {
     max-width: 218px;

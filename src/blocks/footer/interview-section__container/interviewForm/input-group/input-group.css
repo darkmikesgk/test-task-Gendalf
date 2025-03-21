@@ -10,7 +10,7 @@
 }
 
 .input-group:nth-child(6) {
-  margin-bottom: 20px;
+  margin-bottom: 16px;
 }
 
 .input-group input {
@@ -44,6 +44,30 @@
   outline: 2px solid rgba(253, 117, 131, 1);
 }
 
+.file-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 296px;
+  margin: 5px 0;
+  color: #fff;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.file-item button {
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  color: white;
+  background-color: #ff4d4d;
+  cursor: pointer;
+}
+
+.file-item button:hover {
+  background-color: #fd7583;
+}
+
 @media (min-width: 1025px) {
   .input-group:nth-child(6) textarea {
     height: 110px;
@@ -58,6 +82,14 @@
   }
 
   .input-group:nth-child(6) {
-    margin-bottom: 10px;
+    margin-bottom: 13px;
+  }
+
+  .file-item {
+    max-width: 270px;
+    margin-bottom: 5px;
+    padding: 5px;
+    font-weight: 300;
+    font-size: 18px;
   }
 }

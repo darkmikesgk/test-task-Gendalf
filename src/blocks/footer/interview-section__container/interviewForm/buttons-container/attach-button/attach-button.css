@@ -14,7 +14,7 @@
   outline: 2px solid #9bcc37;
   color: #9bcc37;
   font-weight: 700;
-  font-size: 20px;
+  font-size: 18px;
   background-color: #fff;
 }
 
@@ -25,8 +25,8 @@
 
 @media (min-width: 1025px) {
   .attach-button {
-    gap: 2%;
+    justify-content: center;
     max-width: 270px;
-    padding: 12px 0 11px;
+    padding: 0;
   }
 }

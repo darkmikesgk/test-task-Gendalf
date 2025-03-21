@@ -4,19 +4,20 @@ export function validateInput(input) {
 
   switch (input.id) {
     case "name":
-      isValid = /^[a-zA-Zа-яА-ЯёЁ]{2,}$/.test(value);
+      isValid = /^[a-zA-Zа-яА-ЯёЁ\s'-]{2,}$/.test(value);
       break;
     case "phone":
-      isValid = /^\+?\d{7,}$/.test(value);
+      const cleanedPhone = value.replace(/\D/g, "");
+      isValid = /^\+?\d{11,}$/.test(cleanedPhone);
       break;
     case "email":
       isValid = validateEmail(value);
       break;
     case "position":
-      isValid = /^[a-zA-Zа-яА-ЯёЁ\s]+$/.test(value);
+      isValid = /^[a-zA-Zа-яА-ЯёЁ0-9\s'-]+$/.test(value);
       break;
     case "questions":
-      isValid = value !== "";
+      isValid = value.trim() !== "";
       break;
   }
 
@@ -25,7 +26,7 @@ export function validateInput(input) {
 }
 
 export function setValidationIcon(input, isValid) {
-  const icon = input.nextElementSibling;
+  const icon = input.parentElement.querySelector(".validation-icon");
   if (isValid) {
     input.classList.add("valid");
     input.classList.remove("invalid");
@@ -40,6 +41,30 @@ export function setValidationIcon(input, isValid) {
 }
 
 function validateEmail(email) {
-  const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  const re = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
   return re.test(email);
+}
+
+export function validateForm() {
+  const inputs = document.querySelectorAll(
+    ".input-group input, .input-group textarea"
+  );
+  let isValid = true;
+
+  inputs.forEach((input) => {
+    if (!validateInput(input)) {
+      isValid = false;
+    }
+  });
+
+  const employmentSelected = document.querySelector(
+    'input[name="employment"]:checked'
+  );
+  const resumeAttached = document.getElementById("resume").files.length > 0;
+
+  if (!employmentSelected || !resumeAttached) {
+    isValid = false;
+  }
+
+  return isValid;
 }
